@@ -1,15 +1,13 @@
 import React from 'react';
-import Main from "./Main";
-import Nav from "./Nav";
-
 import './App.css';
+import PortfolioNav from './features/Navbar/PortfolioNav';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <Nav />
-      <Main />
-    </div>
+      <BrowserRouter>
+        <PortfolioNav />
+      </BrowserRouter>
   );
 }
 
